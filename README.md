@@ -150,3 +150,4 @@ tingshu-parent/
     secret:  # 小程序微信公众平台api秘钥 改成自己的申请测试号秘钥
     msgDataFormat: JSON
   ```
+## 其他问题请在邮箱中留言：2660393395@qq.com
