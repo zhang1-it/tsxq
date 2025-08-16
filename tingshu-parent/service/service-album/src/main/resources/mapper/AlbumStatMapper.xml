@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace等于mapper接口类的全限定名,这样实现对应 -->
+<mapper namespace="com.atguigu.tingshu.album.mapper.AlbumStatMapper">
+    <select id="selectAlbumStatVo" resultType="com.atguigu.tingshu.vo.album.AlbumStatVo">
+        SELECT
+        album_id AS albumId,
+        SUM(IF(stat_type = 'PLAY', stat_num, 0)) AS playStatNum,
+        SUM(IF(stat_type = 'SUBSCRIBE', stat_num, 0)) AS subscribeStatNum,
+        SUM(IF(stat_type = 'BUY', stat_num, 0)) AS buyStatNum,
+        SUM(IF(stat_type = 'COMMENT', stat_num, 0)) AS commentStatNum
+        FROM album_stat
+        WHERE album_id = #{albumId} and is_deleted = 0
+    </select>
+
+</mapper>

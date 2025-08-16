@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="com.atguigu.tingshu.album.mapper.TrackInfoMapper">
+
+    <!--修改同专辑的声音排序-->
+    <update id="updateOrderNumDecrease">
+        update track_info
+        set order_num=order_num - 1
+        where album_id = #{albumId}
+          and order_num > #{orderNum}
+         and is_deletted=0
+    </update>
+
+
+    <select id="selectUserTrackByPage" resultType="com.atguigu.tingshu.vo.album.TrackListVo">
+        select ti.album_id,
+               ai.album_title,
+               ti.id trackId,
+               ti.track_title,
+               ti.cover_url,
+               ti.media_duration,
+               ti.status,
+               max(if(ts.stat_type=0701,ts.stat_num,0)) playStatNum,
+               max(if(ts.stat_type=0702,ts.stat_num,0)) collectStatNum,
+               max(if(ts.stat_type=0703,ts.stat_num,0)) praiseStatNum,
+               max(if(ts.stat_type=0704,ts.stat_num,0)) commentStatNum
+        from track_info ti
+                 inner join album_info ai on ti.album_id = ai.id
+                 inner join track_stat ts on ti.id = ts.track_id
+        <where>
+            ti.is_deleted=0 and ai.is_deleted=0 and ts.is_deleted=0 and ti.user_id=#{vo.userId}
+            <if test="vo.trackTitle!=null and vo.trackTitle!=''">
+               and ti.track_title like CONCAT('%',vo.trackTitle,'%')
+            </if>
+            <if test="vo.status!=null and vo.status!=''">
+                and ti.user_id=#{vo.status}
+            </if>
+
+        </where>
+        group by ti.id order by ti.id desc
+    </select>
+    <select id="selectAlbumTrackPage" resultType="com.atguigu.tingshu.vo.album.AlbumTrackListVo">
+        select ts.track_id,
+               ti.track_title,
+               ti.media_duration,
+               ti.order_num,
+               max(if(ts.stat_type=0701,ts.stat_num,0)) playStatNum,
+               max(if(ts.stat_type=0704,ts.stat_num,0)) albumCommentStatNum,
+               ti.create_time
+        from track_info ti inner join track_stat ts
+                                      on ti.id=ts.track_id where ti.album_id=#{albumId} group by ti.id order by ti.order_num asc
+    </select>
+</mapper>
+
