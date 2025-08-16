@@ -51,7 +51,7 @@
 <img width="395" height="708" alt="image" src="https://github.com/user-attachments/assets/cea63a79-df4e-4bc1-982c-32d4daa7a2eb" />
 
 ### 我的声音
-<img width="389" height="699" alt="image" src="https://github.com/user-attachments/assets/eab10165-7660-4b21-b1f8-f5bc1e45e321" />
+<img width="398" height="707" alt="image" src="https://github.com/user-attachments/assets/c6d69319-8d96-4bc4-ad9b-eaaf4b5bd167" />
 <img width="391" height="679" alt="image" src="https://github.com/user-attachments/assets/69ad72dc-b8fb-49d1-a2bc-b86f6b91254b" />
 
 # 文件结构
