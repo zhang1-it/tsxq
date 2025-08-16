@@ -41,7 +41,7 @@
 ## 环境初始化
 - 本项目环境搭建使用的CentOs7系统，请先准备一台可以创建CentOs7虚拟机的电脑。
 - 点击[百度网盘](https://pan.baidu.com/s/1Qq3oIe4Q7fYl_q2wKKZsXw?pwd=arn3)进行下载，使用VmWare打开
-- 需要修改虚拟机网络配置，本项目虚拟机的ip地址为192.168.254.156
+- 需要修改虚拟机Net模式的网络配置，本项目虚拟机的ip地址为192.168.254.156
 - <img width="1175" height="810" alt="image" src="https://github.com/user-attachments/assets/f5913c58-45f4-4aae-80e6-21cf23e5abc8" />
 
 ## 前端初始化
