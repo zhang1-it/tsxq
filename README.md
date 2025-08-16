@@ -2,6 +2,54 @@
 随着智能手机和高速互联网的普及，人们开始寻求更便捷的方式来获取信息和娱乐。有声书的出现使得人们可以在旅途中、跑步时、做家务时等各种场景下，以更加灵活的方式享受阅读。
 
 在过去，有声书主要是由**专业的演员朗读**，制作成录音带或CD。但随着数字化媒体的发展，听书软件应运而生，为用户提供了更多选择，包括自助出版的有声书和多样化的内容。
+# 项目运行图
+### 主界面
+<img width="404" height="705" alt="image" src="https://github.com/user-attachments/assets/2cd58e77-956d-4266-86cd-368a12b2e4d1" />
+
+### 排行榜
+<img width="393" height="678" alt="image" src="https://github.com/user-attachments/assets/d3bf2f94-5133-4744-a2d4-6e5a18c195dd" />
+
+### 个人主页
+<img width="385" height="676" alt="image" src="https://github.com/user-attachments/assets/24441a88-e7fe-4112-a9bb-9ff6ca95d1e1" />
+
+### 搜索
+<img width="385" height="668" alt="image" src="https://github.com/user-attachments/assets/75ca11af-053f-4f73-8170-94b49fc1ed57" />
+<img width="387" height="682" alt="image" src="https://github.com/user-attachments/assets/51c465cc-f518-402f-8e05-392bb44ed621" />
+
+### 全部分类
+<img width="382" height="687" alt="image" src="https://github.com/user-attachments/assets/cab6c8f5-4e7b-4e9c-9740-e16364ad828b" />
+
+### 分类下全部专辑
+<img width="393" height="680" alt="image" src="https://github.com/user-attachments/assets/da5700af-e4dc-4391-a8e0-bfe1e4efd007" />
+
+### 专辑详情
+<img width="397" height="685" alt="image" src="https://github.com/user-attachments/assets/255694da-9c54-4689-8ea8-184411d37796" />
+
+### 声音详情
+<img width="390" height="682" alt="image" src="https://github.com/user-attachments/assets/52f76e2e-d001-4d94-a3cf-d2fb06c024ba" />
+
+### vip购买
+<img width="392" height="705" alt="image" src="https://github.com/user-attachments/assets/55454ce3-53ba-4c42-bc0b-005ba597fde0" />
+<img width="400" height="703" alt="image" src="https://github.com/user-attachments/assets/e9d3804b-25c9-4e51-a7cd-80def71b6472" />
+<img width="399" height="699" alt="image" src="https://github.com/user-attachments/assets/d8106fa9-5959-4a15-b84e-d1bfefb32367" />
+
+### 我的钱包
+<img width="390" height="691" alt="image" src="https://github.com/user-attachments/assets/d7e64cda-5b55-4fe4-b9b5-656cc8222d80" />
+<img width="400" height="692" alt="image" src="https://github.com/user-attachments/assets/1df65fb9-a277-4c66-8605-702c0fcb76e8" />
+<img width="387" height="680" alt="image" src="https://github.com/user-attachments/assets/30ce7f62-db1d-4188-b463-ad7ca01dd889" />
+<img width="388" height="697" alt="image" src="https://github.com/user-attachments/assets/b5bc18f9-8ecd-479e-b05c-5c1086988f73" />
+
+### 订单中心
+<img width="375" height="658" alt="image" src="https://github.com/user-attachments/assets/9702b3e9-24c1-469f-a1e3-f88ae5c66311" />
+
+### 我的专辑
+<img width="386" height="693" alt="image" src="https://github.com/user-attachments/assets/c5b234f8-39b5-44c7-87cf-55bcb74eb523" />
+<img width="395" height="708" alt="image" src="https://github.com/user-attachments/assets/cea63a79-df4e-4bc1-982c-32d4daa7a2eb" />
+
+### 我的声音
+<img width="389" height="699" alt="image" src="https://github.com/user-attachments/assets/eab10165-7660-4b21-b1f8-f5bc1e45e321" />
+<img width="391" height="679" alt="image" src="https://github.com/user-attachments/assets/69ad72dc-b8fb-49d1-a2bc-b86f6b91254b" />
+
 # 文件结构
 **mp-weixin** 前端代码
 
