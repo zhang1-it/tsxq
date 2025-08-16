@@ -42,8 +42,39 @@
 - 本项目环境搭建使用的CentOs7系统，请先准备一台可以创建CentOs7虚拟机的电脑。
 - 点击[百度网盘](https://pan.baidu.com/s/1Qq3oIe4Q7fYl_q2wKKZsXw?pwd=arn3)进行下载，使用VmWare打开
 - 需要修改虚拟机网络配置，本项目虚拟机的ip地址为192.168.254.156
+- <img width="1175" height="810" alt="image" src="https://github.com/user-attachments/assets/f5913c58-45f4-4aae-80e6-21cf23e5abc8" />
+
 ## 前端初始化
 - 拉取mp-weixin到本地
 - 下载微信开发者工具
 - 注册账号
-- 使用微信开发者工具打开项目
+- 使用微信开发者工具打开项目并启动
+## 后端初始化
+- 下载idea
+- 下载maven
+- 拉取tingshu-parent到本地
+- 使用idea打开，等待maven下载依赖
+- 启动
+  # 可能遇到的问题
+  ## 声音上传功能中，音频上传失败
+  **解决办法：** 本项目音频上传功能使用的腾讯云点播进行完成的，所以需要配置腾讯云点播所需要的环境，点击[云点播 快速入门-文档中心-腾讯云 (tencent.com)](https://cloud.tencent.com/document/product/266/8757)进行注册，在nacos中修改**service-album-dev.yaml**文件，添加如下内容
+  ```
+  vod:
+  appId:  #需要修改为自己的
+  secretId:  #需要修改为自己的
+  secretKey:  #需要修改为自己的
+  region:  #需要修改为自己的
+  procedure: SimpleAesEncryptPreset #任务流
+  #tempPath: /root/tingshu/tempPath
+  tempPath: D:\code\workspace2023\tingshu\temp
+  playKey: wrTwwu8U3DRSRDgC8l7q  #播放加密key
+  ```
+  ## 微信登录功能无法使用
+  **解决方法：**[小程序登录 | 微信开放文档 (qq.com)](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html)。在nacos中修改**service-user-dev.yaml**文件，修改如下内容
+  ```
+  wx:
+  miniapp:
+    appid:   # 小程序微信公众平台appId 改成自己的申请测试号应用id
+    secret:  # 小程序微信公众平台api秘钥 改成自己的申请测试号秘钥
+    msgDataFormat: JSON
+  ```
