@@ -58,6 +58,25 @@
 **mp-weixin** 前端代码
 
 **tingshu-parent** 后端代码
+
+## 项目结构
+```
+tingshu-parent/
+├── common/ # 公共模块
+│ ├── common-util/ # 通用工具类
+| ├── kafka-util/ # 消息队列工具类
+│ └── service-util/ # 服务通用组件
+├── model/ # 数据模型
+├── service-gateway/ # 网关
+├── service/ # 业务服务模块
+│ ├── service-search/ # 搜索服务
+│ └── ... # 其他服务模块
+├── service-client/ #远程服务客户端
+│ ├── service-account-client/ #账户远程调用客户端
+│ └── ... # 其他客户端模块
+└── pom.xml # 父项目配置
+```
+
 # 技术栈
 - **SpringBoot**：简化Spring应用的初始搭建以及开发过程
 - **SpringCloud**：基于Spring Boot实现的云原生应用开发工具，SpringCloud使用的技术：（Spring Cloud Gateway、Spring Cloud Task和Spring Cloud Feign、Spring Cloud Nacos、Sentinel等）
