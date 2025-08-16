@@ -33,6 +33,10 @@
 <img width="400" height="703" alt="image" src="https://github.com/user-attachments/assets/e9d3804b-25c9-4e51-a7cd-80def71b6472" />
 <img width="399" height="699" alt="image" src="https://github.com/user-attachments/assets/d8106fa9-5959-4a15-b84e-d1bfefb32367" />
 
+### 声音购买
+<img width="400" height="714" alt="image" src="https://github.com/user-attachments/assets/58a3f10c-e8ce-406a-8893-95f304176a1f" />
+<img width="391" height="696" alt="image" src="https://github.com/user-attachments/assets/affbf537-b732-4069-8ad7-408fc7c66359" />
+
 ### 我的钱包
 <img width="390" height="691" alt="image" src="https://github.com/user-attachments/assets/d7e64cda-5b55-4fe4-b9b5-656cc8222d80" />
 <img width="400" height="692" alt="image" src="https://github.com/user-attachments/assets/1df65fb9-a277-4c66-8605-702c0fcb76e8" />
