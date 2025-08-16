@@ -52,6 +52,7 @@
 ## 后端初始化
 - 下载idea
 - 下载maven
+- 下载jdk17
 - 拉取tingshu-parent到本地
 - 使用idea打开，等待maven下载依赖
 - 启动
